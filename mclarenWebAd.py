@@ -15,9 +15,13 @@ if sect == "Homepage":
 
 
 if sect == "Facts & Stats":
+	pass
 
 if sect == "Under The Hood":
+	pass
 
 if sect == "A Look On The Inside":
+	pass
 
 if sect == "Pricing & Orders":
+	pass
