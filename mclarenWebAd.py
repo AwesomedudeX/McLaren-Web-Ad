@@ -16,7 +16,7 @@ if sect == "Homepage":
 	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">McLaren MP4-12C</h1>', unsafe_allow_html=True)
 	st.image("McLaren_MP4-12C.webp", caption="Credit: https://cars.mclaren.com/en/legacy/12c")
 
-	st.write("The McLaren MP4-12C ")
+	st.write("The McLaren MP4-12C is an F1-inspired supercar that was the successor of the Mercedes-Benz SLR McLaren. It was an F1 car that was the result of a collaboration between McLaren and Mercedes. It had the McLaren logo on it, but it wasn't a true McLaren car, which was what the company was looking to develop. McLaren had unveiled their MP4-12C model in September 2009 sold its 40% stake in 2010")
 
 if sect == "Facts & Stats":
 	
