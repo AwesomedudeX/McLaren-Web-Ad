@@ -6,8 +6,8 @@ warnings.filterwarnings("ignore")
 st.set_page_config(page_title="The McLaren MP4-12C", page_icon="logo.png", layout='centered', initial_sidebar_state='auto')
 
 st.sidebar.subheader("Viewing Notes:")
-st.sidebar.write(" - Use the navigation box on the left sidebar to go to different parts of the webpage")
-st.sidebar.write(" - Click on the 3 lines in the top left and select \"Settings\" to change the theme of the page (light/dark mode)")
+st.sidebar.write(" - Use the navigation box on the sidebar to go to different parts of the webpage")
+st.sidebar.write(" - Click on the 3 lines in the top right and select \"Settings\" to change the theme of the page (light/dark mode)")
 
 sects = ("Homepage", "Facts & Stats", "Under The Hood", "A Look On The Inside", "Pricing & Orders", "Sources")
 sect = st.sidebar.radio("Navigate:", sects)
@@ -19,6 +19,7 @@ if sect == "Homepage":
 	st.image("McLaren_MP4-12C.webp", caption="Credit: https://cars.mclaren.com/en/legacy/12c")
 
 	st.write("The McLaren MP4-12C is an F1-inspired supercar that was the successor of the Mercedes-Benz SLR McLaren. The SLR was an F1 car that was the result of a collaboration between McLaren and Mercedes. It had the McLaren logo on it, but it wasn't a true McLaren car, which was what the company was looking to develop. McLaren had unveiled the final design for their their MP4-12C model in September 2009, and after Mercedes-Benz sold its 40% stake in 2010 for the SLR, McLaren moved forward with its plans to become a large-scale vehicle manufacturer with their own resources and plans. The result was a RWD beast that rivaled the Lamborghini Gallardo, Porsche 911 Turbo and the Ferrari 458 Italia. The MP4-12C was presented in public a the Goodwood Festival of Speed in July, 2010, with production starting in February the next year. Its key parts were manufactured in McLaren's name by third-party suppliers, with assembly taking place at the McLaren Production Centre (opened November 2011), which was next to the McLaren Technology Centre.")
+	st.write("\n(Use the sidebar on the left to navigate the page - click the arrow in the top left to open it)")
 
 if sect == "Facts & Stats":
 	
