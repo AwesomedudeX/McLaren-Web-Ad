@@ -3,7 +3,7 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-st.set_page_config(page_title="The McLaren MP4-12C", page_icon="logo.jpg", layout='centered', initial_sidebar_state='auto')
+st.set_page_config(page_title="The McLaren MP4-12C", page_icon="logo.png", layout='centered', initial_sidebar_state='auto')
 
 st.sidebar.subheader("Viewing Notes:")
 st.sidebar.write(" - Use the navigation box on the left sidebar to go to different parts of the webpage")
