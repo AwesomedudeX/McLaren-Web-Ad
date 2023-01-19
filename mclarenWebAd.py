@@ -16,7 +16,7 @@ if sect == "Homepage":
 	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">McLaren MP4-12C</h1>', unsafe_allow_html=True)
 	st.image("McLaren_MP4-12C.webp", caption="Credit: https://cars.mclaren.com/en/legacy/12c")
 
-	st.write("The McLaren MP4-12C is an F1-inspired supercar that was the successor of the Mercedes-Benz SLR McLaren. It was an F1 car that was the result of a collaboration between McLaren and Mercedes. It had the McLaren logo on it, but it wasn't a true McLaren car, which was what the company was looking to develop. McLaren had unveiled their MP4-12C model in September 2009 sold its 40% stake in 2010")
+	st.write("The McLaren MP4-12C is an F1-inspired supercar that was the successor of the Mercedes-Benz SLR McLaren. The SLR was an F1 car that was the result of a collaboration between McLaren and Mercedes. It had the McLaren logo on it, but it wasn't a true McLaren car, which was what the company was looking to develop. McLaren had unveiled the final design for their their MP4-12C model in September 2009, and after Mercedes-Benz sold its 40% stake in 2010 for the SLR, McLaren moved forward with its plans to become a large-scale vehicle manufacturer with their own resources and plans. The result was a RWD beast that rivaled the Lamborghini Gallardo, Porsche 911 Turbo and the Ferrari 458 Italia. The MP4-12C was presented in public a the Goodwood Festival of Speed in July, 2010, with production starting in February the next year. Its key parts were manufactured in McLaren's name by third-party suppliers, with assembly taking place at the McLaren Production Centre (opened November 2011), which was next to the McLaren Technology Centre.")
 
 if sect == "Facts & Stats":
 	
