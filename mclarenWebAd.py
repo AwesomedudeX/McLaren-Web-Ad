@@ -3,7 +3,7 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-st.set_page_config(page_title="The McLaren MP4-12C", page_icon="logo.png", layout='centered', initial_sidebar_state='auto')
+st.set_page_config(page_title="The McLaren MP4-12C", page_icon="logo.png", layout='wide', initial_sidebar_state='auto')
 
 st.sidebar.subheader("Viewing Notes:")
 st.sidebar.write(" - Use the navigation box on the sidebar to go to different parts of the webpage")
@@ -34,6 +34,22 @@ if sect == "A Look On The Inside":
 	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">A Look On The Inside</h1>', unsafe_allow_html=True)
 
 	st.image("interior.jpg", caption="https://www.hgreglux.com/used-car/mclaren-mp4-12c-2012-for-sale-7237?is_sold=1")
+
+	st.write("Your 12C is unique to you, and you only. Unleash your imagination with McLaren Special Operations, and come up with your own finish, layout and/or material(s) for your personalized McLaren MP4-12C.")
+	
+	c1, c2, c3 = st.columns(3)
+
+	with c1:
+		e1 = st.expander("Sleek & Optimized Design")
+		e1.write("The interior features a sleek layout with our intuitive telematics touchscreen at its core, giving you full control over your ride's entertainment, media and communication. Its IRIS system allows for some of the best onboard navigation available, as well as a custom 7-speaker Meridian Surround Sound experience that will immerse you in your soundtracks more effectively than ever before.")
+	
+	with c2:
+		e2 = st.expander("View Control Panel")
+		st.image("panel.jpg", caption="https://www.netcarshow.com/mclaren/2013-mp4-12c_spider/")
+
+	with c3:
+		e3 = st.expander("Intake Sound Generator (ISG)")
+		e3.write("The Intake Sound Generator (ISG) above the system lets you have some fun by adjusting the amount of sound from the car that comes through to the cabin, from a quiet hum to a powerful growl, displaying the efforts we've taken to give you the looks and performance that you paid for.")
 
 if sect == "Pricing & Orders":
 	
