@@ -33,6 +33,8 @@ if sect == "A Look On The Inside":
 	
 	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">A Look On The Inside</h1>', unsafe_allow_html=True)
 
+	st.image("interior.jpg", caption="https://www.hgreglux.com/used-car/mclaren-mp4-12c-2012-for-sale-7237?is_sold=1")
+
 if sect == "Pricing & Orders":
 	
 	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">Pricing & Orders</h1>', unsafe_allow_html=True)
