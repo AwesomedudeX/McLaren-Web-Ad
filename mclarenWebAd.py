@@ -54,6 +54,11 @@ if sect == "Facts & Stats":
 		bdf = pd.DataFrame(index=["1", "2"], columns=["Statistic   ", "Value"], data=[["Braking: 100-0kph (62-0mph)", "30.7m (101ft)"], ["Braking: 200-0kph (124-0mph)", "123.5m (405ft)"]])
 		e4.dataframe(bdf)
 
+	e5 = st.expander("Rating")
+	rdf = pd.DataFrame(index=["1", "2", "3", "4", "5", "6"], columns=["Section   ", "Rating"], data=[["Comfort", "4.3"], ["Interior Design", "4.6"], ["Performance", "5"], ["Value For The Money", "4.6"], ["Exterior Styling", "4.9"], ["Reliability", "4.6"]])
+	e5.write("(https://www.cars.com/research/mclaren-mp4_12c-2012/)")
+	e5.dataframe(rdf)
+
 if sect == "Interior Design":
 	
 	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">A Look On The Inside</h1>', unsafe_allow_html=True)
@@ -84,7 +89,10 @@ if sect == "Exterior Design":
 
 	st.write("The 12C is the first street car since our iconic F1, and so we've made sure this extraordinary supercar is engineered to perfection. Every curve, line, part and surface in the 12C's design is there for a reason, and that is to give you our best performance and thrill as you ride in this exotic masterpiece.")
 
+	c1, c2 = st.columns(2)
 
+	with c1:
+		e1 = st.expander("")
 
 if sect == "Sources":
 	
