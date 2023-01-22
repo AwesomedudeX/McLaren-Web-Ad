@@ -15,7 +15,7 @@ sect = st.sidebar.radio("Navigate:", sects)
 
 if sect == "Homepage":
 	
-	st.write("Note: This website is not a real website, and was made for a school project. Don't worry about any information being stolen, as none will be saved.")
+	st.write("Note: This is not an official website, and was made for a school project. Don't worry about any information being stolen, as none will be saved.")
 	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">McLaren MP4-12C</h1>', unsafe_allow_html=True)
 	st.image("McLaren_MP4-12C.webp", caption="Credit: https://cars.mclaren.com/en/legacy/12c")
 
