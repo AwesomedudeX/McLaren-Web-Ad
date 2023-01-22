@@ -113,8 +113,8 @@ if sect == "Exterior Design":
 
 
 	with c4:
-		e4 = st.expander("Fast and Light")
-		e4.subheader("Spoiler Airbrakes")
+		e4 = st.expander("Fast & Light")
+		e4.subheader("Fast & Light")
 		e4.image("wheels.jpg", caption="https://www.mclarenboston.com/2012-mclaren-mp4-12c-c-335/")
 		e4.write("Reducing a car's wheel weight is more impactful than trying to reduce weight in any other part of the car, so we optimize every single detail of our wheels. We reduce mass as much as possible, while enhancing the strength and performance of our wheels. Our specialist Pirelli tires come with rims with 5- and 10-spoke design.")
 
