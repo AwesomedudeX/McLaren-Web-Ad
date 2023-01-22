@@ -109,14 +109,14 @@ if sect == "Exterior Design":
 		e3 = st.expander("Extraordinary Finish")
 		e3.subheader("Spoiler Airbrakes")
 		e3.image("finish.jpg", caption="https://en.wikipedia.org/wiki/McLaren_12C")
-		e3.write("")
+		e3.write("Our 3-stage Formula 1™-inspired paint technology is mixed and painted by hand for perfection, ensuring that the colour, tint, lustre and smooth finish of the 12C's paint job is absolutely flawless. It also minimizes the paint weight as much as possible. A lot of our Special and Elite paint jobs use a higher level of metallic and perlescent content. Using our exclusive pignents and a greater holographic effect, these highly-crafted paint finishes pay tribute to the car's aerodynamic design by bringing out every line, curve and contour of the body.")
 
 
 	with c4:
 		e4 = st.expander("Fast & Light")
 		e4.subheader("Fast & Light")
 		e4.image("wheels.jpg", caption="https://www.mclarenboston.com/2012-mclaren-mp4-12c-c-335/")
-		e4.write("Reducing a car's wheel weight is more impactful than trying to reduce weight in any other part of the car, so we optimize every single detail of our wheels. We reduce mass as much as possible, while enhancing the strength and performance of our wheels. Our specialist Pirelli tires come with rims with 5- and 10-spoke design.")
+		e4.write("Reducing a car's wheel weight is more impactful than trying to reduce weight in any other part of the car, so we optimize every single detail of our wheels. We reduce mass as much as possible, while enhancing the strength and performance of our wheels. Our specialist Pirelli tires come with rims with a 5 and 10-spoke design, as well as a range of marvelous finishes like Diamond Cut and Stealth.")
 
 if sect == "Sources":
 	
