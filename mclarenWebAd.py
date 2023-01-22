@@ -1,15 +1,16 @@
 import streamlit as st
+import pandas as pd
 import warnings
 
 warnings.filterwarnings("ignore")
 
-st.set_page_config(page_title="The McLaren MP4-12C", page_icon="logo.png", layout='wide', initial_sidebar_state='auto')
+st.set_page_config(page_title="The McLaren MP4-12C", page_icon="logo.png", layout='wide', initial_sidebar_state='expanded')
 
 st.sidebar.subheader("Viewing Notes:")
 st.sidebar.write(" - Use the navigation box on the sidebar to go to different parts of the webpage")
 st.sidebar.write(" - Click on the 3 lines in the top right and select \"Settings\" to change the theme of the page (light/dark mode)")
 
-sects = ("Homepage", "Facts & Stats", "Under The Hood", "A Look On The Inside", "Pricing & Orders", "Sources")
+sects = ("Homepage", "Facts & Stats", "Interior Design", "Exterior Design", "Sources")
 sect = st.sidebar.radio("Navigate:", sects)
 
 if sect == "Homepage":
@@ -25,11 +26,35 @@ if sect == "Facts & Stats":
 	
 	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">Facts & Stats</h1>', unsafe_allow_html=True)
 
-if sect == "Under The Hood":
-	
-	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">Under The Hood</h1>', unsafe_allow_html=True)
+	c1, c2 = st.columns(2)
 
-if sect == "A Look On The Inside":
+	with c1:
+		e1 = st.expander("General Performance")
+		e1.image("aerodynamics.jpg", caption="https://www.v12-gt.com/les-dernieres-news-du-monde-automobile-de-luxe/l-echos-des-constructeurs-d-automobiles/McLaren-MP4-12C2")
+		gpdf = pd.DataFrame(index=["1", "2", "3", "4", "5", "6"], columns=["Statistic", "Value"], data=[["Top Speed", "33kph (207mph)"], ["Acceleration: 0-100kph (62mph)", "3.1 sec."], ["Acceleration: 0-200kph (124mph)", "8.8 sec."], ["Maximum Power Output", "625PS (616bhp)"], ["Maximum Torque", "600Nm (443lbft)"], ["Efficiency (EU WLTP)", "279g/km"]])
+		e1.dataframe(gpdf)
+	
+	with c2:
+		e2 = st.expander("Body & Weight")
+		e2.image("body.jpg", caption="https://www.journauto.com/blog/2010/09/04/preview-2012-mclaren-mp4-12c/")
+		bwdf = pd.DataFrame(index=["1", "2", "3", "4"], columns=["Statistic   ", "Value"], data=[["Body Type", "Coupé"], ["Number of Doors", "2"], ["Dry Weight (Lightest)", "1341kg (2956lb)"], ["DIN Kerb Weight", "1474kg (3249lbs)"]])
+		e2.dataframe(bwdf)
+
+	c3, c4 = st.columns(2)
+
+	with c3:
+		e3 = st.expander("Engine")
+		e3.image("engine.jpg", caption="https://www.caranddriver.com/reviews/a22042645/2012-mclaren-mp4-12c-tech-trickledown/")
+		edf = pd.DataFrame(index=["1", "2", "3"], columns=["Statistic   ", "Value"], data=[["Engine Capacity", "3799cc"], ["Engine Type", "V8, 4.0L"], ["Technology", "Twin Turbochargers, Dry Sump System"]])
+		e3.dataframe(edf)
+
+	with c4:
+		e4 = st.expander("Braking")
+		e4.image("brakes.jpg", caption="http://mp4-12c.over-blog.com/pages/Wheels-tyres-and-brakes-4755907.html")
+		bdf = pd.DataFrame(index=["1", "2"], columns=["Statistic   ", "Value"], data=[["Braking: 100-0kph (62-0mph)", "30.7m (101ft)"], ["Braking: 200-0kph (124-0mph)", "123.5m (405ft)"]])
+		e4.dataframe(bdf)
+
+if sect == "Interior Design":
 	
 	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">A Look On The Inside</h1>', unsafe_allow_html=True)
 
@@ -45,15 +70,21 @@ if sect == "A Look On The Inside":
 	
 	with c2:
 		e2 = st.expander("View Control Panel")
-		st.image("panel.jpg", caption="https://www.netcarshow.com/mclaren/2013-mp4-12c_spider/")
+		e2.image("panel.jpg", caption="https://www.netcarshow.com/mclaren/2013-mp4-12c_spider/")
 
 	with c3:
 		e3 = st.expander("Intake Sound Generator (ISG)")
 		e3.write("The Intake Sound Generator (ISG) above the system lets you have some fun by adjusting the amount of sound from the car that comes through to the cabin, from a quiet hum to a powerful growl, displaying the efforts we've taken to give you the looks and performance that you paid for.")
 
-if sect == "Pricing & Orders":
+	st.write("The 12C's interior is built for comfort and performance. No matter what you expect, the cabin on this supercar will give you comfort and convenience as you cruise in your custom-built MP4-12C.")
+
+if sect == "Exterior Design":
 	
-	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">Pricing & Orders</h1>', unsafe_allow_html=True)
+	st.markdown(f'<h1 style="color:#FF0000;font-size:40px;">Exterior Design</h1>', unsafe_allow_html=True)
+
+	st.write("The 12C is the first street car since our iconic F1, and so we've made sure this extraordinary supercar is engineered to perfection. Every curve, line, part and surface in the 12C's design is there for a reason, and that is to give you our best performance and thrill as you ride in this exotic masterpiece.")
+
+
 
 if sect == "Sources":
 	
