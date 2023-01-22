@@ -92,7 +92,31 @@ if sect == "Exterior Design":
 	c1, c2 = st.columns(2)
 
 	with c1:
-		e1 = st.expander("")
+		e1 = st.expander("Iconic Doors")
+		e1.subheader("Iconic Doors")
+		e1.image("doors.jpg", "https://cars.mclaren.com/en/legacy/12c/design")
+		e1.write("Our iconic dihedral doors - first seen on our F1 model - are lighter and more aerodynamic than regular doors. They are also more practical - they have only 1 hinge, which doesn't need as much room to open while making it much easier to enter and exit the cabin.")
+
+	with c2:
+		e2 = st.expander("Spoiler Airbrakes")
+		e2.subheader("Spoiler Airbrakes")
+		e2.image("airbrakes.jpg", "https://kumparan.com/kumparanoto/mengenal-fitur-air-brake-spoiler-yang-ada-pada-mclaren-mp4-12c-1tLuIWa3jLS")
+		e2.write("The 12C's spoiler airbrakes are designed to make braking as efficient as possible while maximizing its aerodynamics. The spoiler is designed to stay aligned with the car while driving, and flip up when you hit the brakes, creating drag that slows down your car more quickly. It's a simple feature that's effective, looks nice, and comes with no compromise in terms of performance.")
+
+	c3, c4 = st.columns(2)
+
+	with c3:
+		e3 = st.expander("Extraordinary Finish")
+		e3.subheader("Spoiler Airbrakes")
+		e3.image("finish.jpg", caption="https://en.wikipedia.org/wiki/McLaren_12C")
+		e3.write("")
+
+
+	with c4:
+		e4 = st.expander("Fast and Light")
+		e4.subheader("Spoiler Airbrakes")
+		e4.image("wheels.jpg", caption="https://www.mclarenboston.com/2012-mclaren-mp4-12c-c-335/")
+		e4.write("Reducing a car's wheel weight is more impactful than trying to reduce weight in any other part of the car, so we optimize every single detail of our wheels. We reduce mass as much as possible, while enhancing the strength and performance of our wheels. Our specialist Pirelli tires come with rims with 5- and 10-spoke design.")
 
 if sect == "Sources":
 	
